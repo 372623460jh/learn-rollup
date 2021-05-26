@@ -23,7 +23,7 @@
     "lint:fix": "npm run lint -- --fix",
     "lint:style": "stylelint \"packages/**/src/**/*.css\" --syntax css",
     "lint:style:fix": "npm run lint:style -- --fix",
-    "debug": "/Users/jianghe/.nvm/versions/node/v8.17.0/bin/node ./example/debug/index.js",
+    "debug": "/Users/jianghe/.nvm/versions/node/v8.17.0/bin/node --inspect-brk=9229 ./example/debug/index.js",
     "test": "npx jest",
     "ci": "npm run lint && npm run lint:style && npm run test"
   },
