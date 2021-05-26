@@ -1,16 +1,15 @@
 {
-  "name": "debug_rollup",
+  "name": "learn-rollup",
   "version": "1.0.0",
-  "description": "",
-  "author": "",
+  "description": "学习调试低版本rollup",
+  "author": "jiang.he",
   "private": true,
-  "engines": {
-    "node": ">=10.0.0"
+  "license": "MIT",
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
   },
-  "ci": {
-    "version": "12"
-  },
-  "license": "ISC",
   "scripts": {
     "init": "npm run clean && npm i && npm run bootstrap",
     "clean": "rm -rf ./node_modules ./packages/*/{dist,es,lib,node_modules} ./dist ./package-lock.json ./coverage && npx lerna clean --yes ",
@@ -26,11 +25,6 @@
     "debug": "/Users/jianghe/.nvm/versions/node/v8.17.0/bin/node --inspect-brk=9229 ./example/debug/index.js",
     "test": "npx jest",
     "ci": "npm run lint && npm run lint:style && npm run test"
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
   },
   "peerDependencies": {
     "@jianghe/rollup": "*"

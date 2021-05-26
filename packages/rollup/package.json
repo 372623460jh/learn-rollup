@@ -2,15 +2,11 @@
   "name": "@jianghe/rollup",
   "version": "0.0.1",
   "description": "debug rollup",
-  "homepage": "",
   "license": "MIT",
   "main": "lib/index.js",
   "files": [
-    "dist",
-    "es",
     "lib"
   ],
-  "scripts": {},
   "dependencies": {
     "acorn": "^1.2.2",
     "magic-string": "^0.5.3",
