@@ -1,0 +1,1 @@
+{"version":3,"file":"bundle.js","sources":["foo.js","main.js"],"sourcesContent":["export function foo1() {}\nexport function foo2() {}\n","import { foo1, foo2 } from './foo';\n\nfoo1();\nfoo2();\n\nfunction test() {\n  const a = 1;\n  return a;\n}\n\nconsole.log(test());\n"],"names":[],"mappings":"AAAO;;ACEP;ADDO;ACEP;;AAEA;AACA;AACA;AACA;;AAEA"}
